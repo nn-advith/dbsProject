@@ -1,0 +1,190 @@
+.btn {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 200px;
+  border-style: solid;
+  border-color: #000;
+  border-width: medium;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  border-radius: 40px;
+  transition: 0.4s;
+
+
+}
+
+.btn-entry {
+  width: 100%;
+  padding: 15px;
+  border-color: #3FA037;
+}
+
+.btn-danger {
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 100px;
+  border-style: solid;
+  border-color: #ff1919;
+  border-width: medium;
+  border-radius: 5px;
+  color: #000;
+}
+
+.btn-danger:hover {
+  background-color: #ff1919;
+  border-color: #ff1919;
+  color: #000;
+}
+
+.btn-logout {
+  width: 100px;
+}
+
+.btn-logout:hover {
+  background-color: #fff;
+  border-color: #000;
+}
+
+.card {
+  border-style: none;
+}
+
+.circle-button{
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  border: none;
+  pointer-events: none;
+  
+}
+
+.container-fluid {
+  width: 95%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.font-mb {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
+.font-ml {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.heading {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+}
+
+.infobutton {
+  width: 80%;
+  border-radius: 3px;
+  background-color: #CBC3E3;
+  border-color: #CBC3E3;
+  display: inline-block;
+  border: none;
+  padding: 10px;
+  margin: 5px;
+  pointer-events: none;
+}
+
+
+.maindiv {
+  height: 100vh;
+}
+
+.margin-tb {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.nav-header {
+  margin-left: 2%;
+}
+
+.nav-item {
+  margin-left: 5px;
+}
+
+.nl:hover {
+  color: #fff;
+}
+
+nav {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.nav-secondary {
+  margin-bottom: 50px;
+}
+
+.par {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 200;
+  font-size: 2rem;
+}
+
+.row {
+  align-items: center;
+}
+
+
+.subhead {
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+tbody:before {
+  content:"@";
+  display:block;
+  line-height:10px;
+  text-indent:-99999px;
+}
+
+
+/* colors */
+
+.color-green {
+  background-color: #4DB33D
+}
+
+.color-dgreen {
+  background-color: #3FA037
+}
+
+.color-gray {
+  background-color: #C1BEBC;
+}
+
+.color-red {
+  background-color: #ff1919;
+}
+
+.color-purple {
+  background-color: #7851a9;
+}
+
+.color-blue {
+  background-color: #4169e1;
+}
+
+.color-black {
+  background-color: #000;
+}
+
+
+.text-arsenic {
+  color: #3F3E42
+}
+

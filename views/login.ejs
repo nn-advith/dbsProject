@@ -1,0 +1,84 @@
+<%- include('partials/header'); -%>
+
+
+
+<div class="d-flex justify-content-center align-items-center maindiv color-grey">
+  <div class="jumbotron centered">
+    <div class="container text-center">
+
+      <h1 class="heading text-arsenic"><%= pageTitle%></h1>
+      <hr style="background-color: #3F3E42; height: 2px; opacity: 1; margin-top: 50px; margin-bottom: 50px">
+
+      <%if (userType === 'admin'){ %>
+
+      <p class="par text-arsenic" style="font-size: 1.5rem">Enter Username and Password</p>
+      <div class="card">
+        <div class="card-body">
+          <form action="/authenticate/admin" method="POST">
+            <div class="form-group">
+
+              <input type="text" class="form-control margin-tb" name="username" placeholder="Username" required>
+            </div>
+            <div class="form-group">
+
+              <input type="password" class="form-control margin-tb" name="password" placeholder="Password" required>
+            </div>
+            <button type="submit" style="width:100%" name="btnlogin" value="0" class="btn color-purple">Login</button>
+          </form>
+
+        </div>
+      </div>
+
+      <%  } else if ( userType==='student'){ %>
+
+      <p class="par text-arsenic" style="font-size: 1.5rem">Enter USN and DOB</p>
+      <div class="card">
+        <div class="card-body">
+          <form action="/authenticate/student" method="POST">
+            <div class="form-group">
+
+              <input type="text" class="form-control margin-tb" name="username" placeholder="USN" required>
+            </div>
+            <div class="form-group">
+
+              <input type="date" class="form-control margin-tb" name="password" required>
+            </div>
+            <button type="submit" style="width:100%" name="btnlogin" value="1" class="btn color-green">Login</button>
+          </form>
+
+        </div>
+      </div>
+
+      <%  }else if ( userType==='company'){%>
+
+      <p class="par text-arsenic" style="font-size: 1.5rem">Enter Username and Password</p>
+      <div class="card">
+        <div class="card-body">
+          <form action="/authenticate/company" method="POST">
+            <div class="form-group">
+
+              <input type="text" class="form-control margin-tb" name="username" placeholder="Username" required>
+            </div>
+            <div class="form-group">
+
+              <input type="password" class="form-control margin-tb" name="password" placeholder="Password" required>
+            </div>
+            <p class="par text-arsenic" style="font-size: 0.8rem">Username and Password are same as ID for first login</p>
+            <button type="submit" style="width:100%" name="btnlogin" value="2" class="btn color-green">Login</button>
+          </form>
+
+        </div>
+      </div>
+
+      <%  }%>
+
+      <%  if (failedAuth === true){%>
+            <p class="par text-arsenic" style="font-size: 1.rem">Failed Authorization. Try Again</p>
+      <%  }%>
+
+    </div>
+  </div>
+
+</div>
+
+<%- include('partials/footer'); -%>
